@@ -1,7 +1,8 @@
 body{
     font-family: 'Roboto', sans-serif;
-    width: 700px;
+    width: 900px;
     margin: auto;
+    line-height: 1.5;
 }
 hr{
     color: maroon;
