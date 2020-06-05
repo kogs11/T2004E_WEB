@@ -1,0 +1,14 @@
+body{
+    margin: auto;
+    width: 550px;
+    text-align: left;
+    font-family: 'PT Serif';
+    font-size: 15px;
+    line-height: 1.5;
+}
+h2{
+    font-size: medium;
+}
+ul{
+    padding: 15px;
+}
