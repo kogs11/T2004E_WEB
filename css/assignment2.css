@@ -1,0 +1,21 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 700px;
+    margin: auto;
+}
+hr{
+    color: maroon;
+    background: maroon;
+    border: 0;
+    height: 1px;
+    margin: 10px 0 20px;
+}
+h2{
+    font-size: medium;
+    color: maroon;
+    font-style: italic;
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
