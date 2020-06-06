@@ -5,15 +5,13 @@ body{
     line-height: 1.5;
 }
 hr{
-    color: maroon;
-    background: maroon;
-    border: 0;
-    height: 1px;
-    margin: 10px 0 20px;
+    border-color: white;
+    border-style: none;
+    border-bottom: dashed #800000;
 }
 h2{
     font-size: medium;
-    color: maroon;
+    color: #800000;
     font-style: italic;
     text-decoration: underline;
 }
