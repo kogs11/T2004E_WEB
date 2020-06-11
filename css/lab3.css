@@ -102,6 +102,11 @@ div{
     font-size: x-large;
 }
 
-table{
+.table1{
     margin: 10px 10px;
+}
+
+.price2{
+    font-size: 30px;
+    font-weight: bolder;
 }
