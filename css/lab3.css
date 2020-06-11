@@ -1,11 +1,15 @@
+
 body{
-    width: 900px;
-    height: 900px;
     font-family: 'Open Sans', sans-serif;
     font-size: small;
+    background-color: black;
     position: relative;
 }
-
+.divbody{
+    width: 900px;
+    height: 900px;
+    background-color: white;
+}
 div{
     box-sizing: border-box;
     float: left;
