@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #f2f2f2;
+    color: #b3b3b3;
+}
+a{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+li{
+    list-style: none;
+}
+.menu-top .icon{
+    max-width: 40px;
+    padding: 0 5px 0 10px;
+}
+.logo img{
+    max-width: 40px;
+}
+.header,.main-content,.body-top-slogan,.body-top-nav,.product,.footer{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    background-color: white;
+    padding-top: 20px;
+}
+.header-left{
+    float: left;
+    width: 45%;
+}
+.header-left li{
+    float: left;
+}
+.logo{
+    float: left;
+    width: 10%;
+}
+.header-right input[type=text]{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 45%;
+    font-size: 14px;
+}
+.header-right button{
+    float: right;
+}
+.header-right a{
+    float: right;
+}
+.body-top-nav,.body-top-slogan{
+    background-color: #96f7e3;
+}
+.body-top-nav{
+    border-top: 0.5px solid #446e68;
+}
+.slogan{
+    padding: 20px 0;
+    font-size: 40px;
+    color: #446e68;
+    text-align: center;
+}
+.top-nav{
+    font-size: 25px;
+    color: #446e68;
+    text-align: center;
+    overflow: auto;
+}
+.top-nav .top-nav-col{
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+    border-right: 0.5px solid #446e68;
+}
+.top-nav-col:last-child{
+    border-right: none;
+}
+.product-nav{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.product-nav li{
+    float: left;
+    margin: 0 10px;
+}
+.product-row{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.product-col{
+    float: left;
+    width: 310px;
+    height: 310px;
+    background-color: white;
+}
+.product-row.product-col.last{
+    float: right;
+    margin-right: 0;
+}

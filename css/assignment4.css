@@ -26,21 +26,19 @@ img{
 .header{
     padding: 20px 0;
     background-color: white;
-    float: left;
 }
 .header-left{
-    width: 40%;
     float: left;
+    width: 45%;
     padding-top: 10px;
 }
-.header-middle {
-    width: 20%;
+.header-middle{
+    width: 10%;
     padding-top: 2px;
-    float: none;
 }
 .header-right{
-    width: 40%;
     float: right;
+    width: 45%;
 }
 .menu-top li{
     float: left;
@@ -70,4 +68,67 @@ img{
     font-weight: 500;
     text-align: center;
     padding: 10px 30px;
+}
+.container-1{
+    width: 200px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-1 input#search{
+    width: 200px;
+    height: 40px;
+    background: #f2f2f2;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #b3b3b3;
+    padding-left: 45px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+    margin-top: 8px;
+    z-index: 1;
+    color: #b3b3b3;
+}
+.top-nav{
+    width: 100%;
+    background-color: #96f7e3;
+}
+.top-nav1{
+    color: #446e68;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+.top-nav2{
+    float: left;
+    width: 100%;
+    color: #446e68;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid #446e68;
+}
+#top-nav2{
+    overflow: auto;
+}
+.top-nav2-1{
+    width: 30%;
+    margin: auto 0;
+}
+.top-nav2-2{
+    width: 30%;
+    border-left: 1px solid #446e68;
+    border-right: 1px solid #446e68;
+    margin: auto 0;
+}
+.top-nav2-3{
+    width: 30%;
+    margin: auto 0;
 }
