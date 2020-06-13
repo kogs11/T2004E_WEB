@@ -34,11 +34,13 @@ li{
 }
 .header{
     background-color: white;
-    padding-top: 20px;
+    padding: 10px 0;
 }
 .header-left{
     float: left;
     width: 45%;
+    padding-top: 5px;
+    font-size: 18px;
 }
 .header-left li{
     float: left;
@@ -46,6 +48,9 @@ li{
 .logo{
     float: left;
     width: 10%;
+}
+.logo img{
+    max-width: 30px;
 }
 .header-right input[type=text]{
     float: left;
@@ -56,10 +61,10 @@ li{
     width: 45%;
     font-size: 14px;
 }
-.header-right button{
+.header-right a{
     float: right;
 }
-.header-right a{
+.header-right button{
     float: right;
 }
 .body-top-nav,.body-top-slogan{
@@ -76,6 +81,7 @@ li{
 }
 .top-nav{
     font-size: 25px;
+    font-weight: 200;
     color: #446e68;
     text-align: center;
     overflow: auto;
@@ -133,6 +139,25 @@ li{
     padding: 7px 15px;
     color: white;
 }
+.product-comment{
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+.product-comment .icon{
+    float: right;
+    max-width: 10px;
+    margin-top: 3px;
+    margin-left: 5px;
+    z-index: 1;
+}
+.product-comment .comment-count{
+    float: left;
+    padding: 0 2px;
+}
 .people-like{
     float: left;
     width: 100%;
@@ -158,6 +183,23 @@ li{
     max-width: 10px;
     margin-right: 5px;
 }
+.heart-wishlist{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 .heart-wishlist .icon{
-    max-width: 15px;
+    max-width: 20px;
+}
+.add-wish-list{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #b3b3b3;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px;
 }
