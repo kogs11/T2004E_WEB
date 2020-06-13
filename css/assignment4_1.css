@@ -60,6 +60,7 @@ li{
     float: right;
     width: 45%;
     font-size: 14px;
+    margin-top: 2px;
 }
 .search-bar{
     width: 250px;
@@ -91,8 +92,10 @@ li{
     color: #b3b3b3;
 }
 .login{
+    float: right;
     width: 50px;
     margin-right: 5px;
+    margin-top: 6px;
 }
 .header-right .login{
     /*float: right;*/
