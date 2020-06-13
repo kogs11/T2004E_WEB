@@ -18,7 +18,7 @@ li{
     list-style: none;
 }
 .menu-top .icon{
-    max-width: 40px;
+    max-width: 30px;
     padding: 0 5px 0 10px;
 }
 .logo img{
@@ -66,7 +66,7 @@ li{
     background-color: #96f7e3;
 }
 .body-top-nav{
-    border-top: 0.5px solid #446e68;
+    border-top: 1px solid #446e68;
 }
 .slogan{
     padding: 20px 0;
@@ -84,7 +84,7 @@ li{
     padding: 20px;
     float: left;
     width: 33.33%;
-    border-right: 0.5px solid #446e68;
+    border-right: 1px solid #446e68;
 }
 .top-nav-col:last-child{
     border-right: none;
@@ -107,8 +107,57 @@ li{
     width: 310px;
     height: 310px;
     background-color: white;
+    position: relative;
 }
-.product-row.product-col.last{
+.first{
+    margin-right: 35px;
+}
+.last{
     float: right;
-    margin-right: 0;
+    margin-left: 35px;
+}
+.product-image{
+    width: 60%;
+    margin: 60px auto;
+    z-index: 1;
+}
+.product-image img{
+    width: 100%;
+}
+.price-tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #2fdab8;
+    padding: 7px 15px;
+    color: white;
+}
+.people-like{
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.people-like img{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+    z-index: 1;
+}
+.like-count{
+    float: left;
+    width: 50px;
+    margin: 7px 10px ;
+    font-size: 12px;
+}
+.price-tag .icon{
+    max-width: 10px;
+    margin-right: 5px;
+}
+.heart-wishlist .icon{
+    max-width: 15px;
 }
