@@ -31,7 +31,7 @@
         // }
         // console.log(x);
         let arr2 = [];
-        for(let i=0;i<5;i++){
+        for(let i=0;i<6;i++){
             arr2[i]=parseInt(Math.random()*50);
             for(let j=0;j<i;j++){
                 if(arr2[i]==arr2[j]){
@@ -44,7 +44,7 @@
             console.log(e);
         })
         let arr = [];
-        for(let i = 0;i<5;i++){
+        for(let i = 0;i<6;i++){
             do{
                 arr[i]=prompt("Nhap so thu "+(i+1));
                 for(let j=0;j<i;j++){
@@ -72,18 +72,34 @@
         //     console.log(e);
         // })
         let check=0;
-        for(let i=0;i<5;i++){
-            for(let j=0;j<5;j++){
+        for(let i=0;i<6;i++){
+            for(let j=0;j<6;j++){
                 if(arr2[i]==arr[j]){
                     check++;
                 }
             }
         }
         console.log(check);
-        if(check==5){
-            alert("CHUC MUNG BAN DA TRUNG GIAI DOC DAC 100 TY!")
-        }else{
-            alert("Rat tiec, ban chua trung giai. Mua nhieu ve them nua nha xD")
+        // if(check==5){
+        //     alert("CHUC MUNG BAN DA TRUNG GIAI DOC DAC 100 TY!")
+        // }else{
+        //     alert("Rat tiec, ban chua trung giai. Mua nhieu ve them nua nha xD")
+        // }
+        switch (check) {
+            case 6:
+                alert("CHUC MUNG BAN DA TRUNG GIAI DOC DAC 100 TY!");
+                break;
+            case 5:
+                alert("Chuc mung ban da trung giai NHAT");
+                break;
+            case 4:
+                alert("Chuc mung ban da trung giai NHI");
+                break;
+            case 3:
+                alert("Chuc mung ban da trung giai BA");
+                break;
+            default:
+                alert("Rat tiec, ban chua trung giai. Mua nhieu ve them nua nha xD");
         }
     </script>
 <!--    <script type="text/javascript" src="js/demo_js.js"></script>-->
