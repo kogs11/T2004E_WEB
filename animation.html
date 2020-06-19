@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+</head>
+<body>
+    <div class="transform">
+        Transform
+    </div>
+    <div class="transition">
+        Transition
+    </div>
+    <div class="animation">
+        Animation
+    </div>
+    <script type="text/javascript">
+        // alert("Cam tre em duoi 18 tuoi");
+        // if(confirm("Ban chac han gui bai thi")){
+        //     console.log("Nop xong, cho ket qua...");
+        // }else{
+        //     console.log("Tiep tuc thi..");
+        // }
+        // var x = prompt("Chon 1 so may man tu 0-99:");
+        // var num = parseInt(Math.random()*100);
+        // if(x==num){
+        //     alert("chuc mung da trung giai");
+        // }else{
+        //     alert("chuc ban may man lan sau");
+        // }
+        // console.log(x);
+        let arr2 = [];
+        for(let i=0;i<5;i++){
+            arr2[i]=parseInt(Math.random()*50);
+            for(let j=0;j<i;j++){
+                if(arr2[i]==arr2[j]){
+                    i--;
+                    break;
+                }
+            }
+        }
+        arr2.map(e=>{
+            console.log(e);
+        })
+        let arr = [];
+        for(let i = 0;i<5;i++){
+            do{
+                arr[i]=prompt("Nhap so thu "+(i+1));
+                for(let j=0;j<i;j++){
+                    if(arr[i]==arr[j]){
+                        i--;
+                        break;
+                    }
+                }
+            }while(arr[i]>=50);
+        }
+        arr.map(function (e) {
+            console.log(e);
+        })
+        // let arr2 = [];
+        // for(let i=0;i<5;i++){
+        //     arr2[i]=parseInt(Math.random()*50);
+        //     for(let j=0;j<i;j++){
+        //         if(arr2[i]==arr2[j]){
+        //             i--;
+        //             break;
+        //         }
+        //     }
+        // }
+        // arr2.map(e=>{
+        //     console.log(e);
+        // })
+        let check=0;
+        for(let i=0;i<5;i++){
+            for(let j=0;j<5;j++){
+                if(arr2[i]==arr[j]){
+                    check++;
+                }
+            }
+        }
+        console.log(check);
+        if(check==5){
+            alert("CHUC MUNG BAN DA TRUNG GIAI DOC DAC 100 TY!")
+        }else{
+            alert("Rat tiec, ban chua trung giai. Mua nhieu ve them nua nha xD")
+        }
+    </script>
+<!--    <script type="text/javascript" src="js/demo_js.js"></script>-->
+</body>
+</html>

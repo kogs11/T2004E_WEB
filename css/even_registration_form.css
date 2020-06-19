@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: black;
+    display: block;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: block;
+}
+.container{
+    background-image: linear-gradient(to bottom left, rgba(183,34,255,1), rgba(10,173,234,1));
+}
+.form-head{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+.form-body{
+    padding-top: 5px;
+    background-color: white;
+    display: block;
+}
+.form-bar{
+    padding: 35px 35px;
+}
+.form-body-name .bar{
+    float: left;
+}
+input{
+    border: none;
+    background-color: #e6e6e6;
+    height: 40px;
+    border-radius: 3px;
+}
+.value{
+    float: left;
+    width: 10%;
+}
+.form-body-name-input,.form-body-company-input,.form-body-phone-number-input,.form-body-email-input,.form-body-subject-select{
+    float: right;
+    width: 60%;
+    display: block;
+}
+/*.form-body-name-input label{*/
+/*    width: 40%;*/
+/*}*/
+/*.form-body-name-input label:first-child{*/
+/*    float: left;*/
+/*    margin-right: 10%;*/
+/*}*/
+/*.form-body-name-input label:last-child{*/
+/*    float: right;*/
+/*}*/
+.form-body-name-input>div{
+    float: left;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 200;
+}
+.form-body-name-input>div:last-child{
+    float: right;
+}
+.form-body-phone-number-input>div:first-child{
+    width: 20%;
+}
+.form-body-phone-number-input>div:last-child{
+    width: 70%;
+}
+.form-body-phone-number-input>div{
+    float: left;
+    font-size: 14px;
+    font-weight: 200;
+}
+.form-body-phone-number-input>div:last-child {
+    float: right;
+}
+select{
+    border: none;
+    background-color: #e6e6e6;
+    height: 40px;
+    border-radius: 3px;
+}
+.form-body-subject-select{
+    float: right;
+    width: 60%;
+}

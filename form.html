@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data</title>
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+    <form method="post" action="#">
+        <label><i class="far fa-user"></i>Username</label><br/><br/>
+        <input type="text" class="input-text" name="username" placeholder="Username.." required/><br/><br/>
+        <input type="email" class="input-text" name="email" placeholder="Email.." required/><br/><br/>
+        <input type="password" class="input-text" name="user-password" placeholder="Password" required/><br/><br/>
+        <label><input type="radio" name="sex" value="male"/>Male</label><br/><br/>
+        <label><input type="radio" name="sex" value="female"/>Female</label><br/><br/>
+        <label><input type="radio" name="sex"value="other"/>Other</label><br/><br/>
+        <input type="date" name="date-of-birth"/>
+        <input type="time" name="date-of-birth"/><br/><br/>
+        <input type="month" name="date-of-birth"/><br/><br/>
+        <input type="number" name="money"/><br/><br/>
+        <input type="range" name="range" min="0" max="100"/><br/><br/>
+        <input type="file" name="avatar" placeholder="Avatar"/><br/><br/>
+        <input type="color" name="color" placeholder="Color.."/><br/><br/>
+        <input type="search" class="input-text" name="search" placeholder="Search.."/><br/><br/>
+        <input type="hidden" name="_token" value="server_token"/><br/><br/>
+        <label><input type="checkbox" name="ready"/>Agree</label><br/><br/>
+
+        <select name="faculty" class="input-text">
+            <option value="toan">Toan</option>
+            <option value="dientu">Dien tu</option>
+            <option value="cntt">Cong nghe thong tin</option>
+        </select><br/><br/>
+
+        <textarea name="tieusubanthan" class="input-text" rows="2" cols="100" placeholder="Tieu su ban than...">
+        </textarea><br/><br/>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </form>
+</body>
+</html>

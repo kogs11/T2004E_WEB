@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Even Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/even_registration_form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form-head">Even Registration Form</div>
+            <div class="form-body">
+                <div class="form-bar" id="form-body-name">
+                    <div class="value">Name</div>
+                    <div class="form-body-name-input">
+                        <div>
+                            <input type="text" name="first-name"/><br/>
+                            First Name
+                        </div>
+                        <div>
+                            <input type="text" name="last-name"/><br/>
+                            Last Name
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bar" id="form-body-company">
+                    <div class="value">Company</div>
+                    <div class="form-body-company-input">
+                        <input type="text" name="company"/>
+                    </div>
+                </div>
+                <div class="form-bar" id="form-body-email">
+                    <div class="value">Email</div>
+                    <div class="form-body-email-input">
+                        <input type="email" name="email" placeholder="example@email.com"/>
+                    </div>
+                </div>
+                <div class="form-bar" id="form-body-phone-number">
+                    <div class="value">Phone</div>
+                    <div class="form-body-phone-number-input">
+                        <div>
+                            <input type="tel" name="area-code" pattern="[0-9]{3}"/><br/>
+                            Area Code
+                        </div>
+                        <div>
+                            <input type="tel" name="phone-number" pattern="[0-9]{10}"/><br/>
+                            Last Name
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bar" id="form-body-subject">
+                    <div class="value">Subject</div>
+                    <div class="form-body-subject-select">
+                        <select name="subject">
+                            <option>Choose option</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
