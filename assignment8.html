@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 8</title>
+</head>
+<body>
+    <h2 id="city-country">Tên thành phố - quốc gia: </h2>
+    <h2 id="temperature">Nhiệt độ: </h2>
+    <h2 id="pressure">Áp suất: </h2>
+    <h2 id="humidity">Độ ẩm: </h2>
+    <h2 id="temp_min_max">Nhiệt độ thấp nhất - cao nhất: </h2>
+    <h2 id="sea_level">Mực nước biển: </h2>
+<script type="text/javascript">
+    var currentWeather = {
+        coord:{
+            lon:139.01,
+            lat:35.02
+        },
+        weather:
+            {
+                id :800,
+                main : "Clear",
+                description : "clear sky , icon : 01n"
+            },
+        base : "stations",
+        main :{
+            temp :285.514,
+            pressure :1013.75,
+            humidity :100,
+            temp_min :285.514,
+            temp_max :285.514,
+            sea_level :1023.22,
+            grnd_level :1013.75
+        },
+        wind :{
+            speed :5.52,
+            deg :311
+        },
+        clouds :{
+            all :0
+        },
+        dt :1485792967,
+        sys :{
+            message :0.0025,
+            country : "JP" ,
+            sunrise :1485726240,
+            sunset :1485763863
+        },
+        id :1907296,
+        name : "Tawarano",
+        cod :200
+    }
+    let h2_city = document.getElementById("city-country");
+    h2_city.innerText = h2_city.innerText+" "+currentWeather.name+"-"+currentWeather.sys.country;
+    let h2_temperature = document.getElementById("temperature");
+    h2_temperature.innerText = h2_temperature.innerText+" "+currentWeather.main.temp;
+    let h2_pressure = document.getElementById("pressure");
+    h2_pressure.innerText = h2_pressure.innerText+" "+currentWeather.main.pressure;
+    let h2_humidity = document.getElementById("humidity");
+    h2_humidity.innerText = h2_humidity.innerText+" "+currentWeather.main.humidity;
+    let h2_temp_min_max = document.getElementById("temp_min_max");
+    h2_temp_min_max.innerText = h2_temp_min_max.innerText+" "+currentWeather.main.temp_min+"-"+currentWeather.main.temp_max;
+    let h2_sea_level = document.getElementById("sea_level");
+    h2_sea_level.innerText = h2_sea_level.innerText+" "+currentWeather.main.sea_level;
+</script>
+</body>
+</html>

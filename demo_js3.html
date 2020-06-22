@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 3</title>
+</head>
+<body>
+    <h1 id="heading">Tên lớp: </h1>
+    <h2 id="sub-heading">Giáo viên: </h2>
+    <h2 id="sub-heading2">Phòng học: </h2>
+    <h2>Danh sách sinh viên:</h2>
+    <ul id="students"></ul>
+<script type="text/javascript">
+    let h1 = document.getElementById("heading");
+    // console.log(h1.innerText);
+    // h1.innerText = "Xin chao cac ban";
+    // h1.style.color = "red";
+    // h1.style.backgroundColor = "yellow";
+    // h1.style.borderBottom = "1px solid green";
+    // h1.innerHTML = "<i>"+h1.innerText+"<i>";
+    let objClass = {
+        className: "T2004E",
+        classRoom: "P201",
+        classTeacher: "Trinh Quang Hoa",
+        classStudent : [
+            {
+                classStudentName: "Student 1",
+                classStudentID: "ID1234"
+            },
+            {
+                classStudentName: "Student 2",
+                classStudentID: "ID1234"
+            },
+            {
+                classStudentName: "Student 3",
+                classStudentID: "ID1234"
+            },
+            {
+                classStudentName: "Student 4",
+                classStudentID: "ID1234"
+            },
+            {
+                classStudentName: "Student 5",
+                classStudentID: "ID1234"
+            }
+        ]
+    };
+    h1.innerText = h1.innerText+" "+objClass.className;
+    let h2_s1 = document.getElementById("sub-heading");
+    h2_s1.innerText = h2_s1.innerText+" "+objClass.classTeacher;
+    let h2_s2 = document.getElementById("sub-heading2");
+    h2_s2.innerText = h2_s2.innerText+" "+objClass.classRoom;
+    let ul = document.getElementById("students");
+    objClass.classStudent.map(function(e){
+        let li = "<li>"+e.classStudentName+"</li>";
+        ul.innerHTML = ul.innerHTML+li;
+    })
+</script>
+</body>
+</html>

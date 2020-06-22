@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let obj = {
+            name : "Nguyen Van An",
+            age : 18,
+            address : "8 Ton That Thuyet",
+            run : function () {
+                console.log(this.name+ " is running...");
+            },
+            girlFriend : [
+                "Ngoc Trinh","Phuong Trinh"
+            ],
+            goToHotel : function(){
+                // for(let i=0;i<this.girlFriend;i++){
+                //     console.log("Di hotel vs "+this.girlFriend[i]);
+                // }
+                this.girlFriend.map(function (e) {
+                    console.log("Di hotel vs "+e);
+                })
+            },
+            children : {
+                name : "Nguyen Van Binh",
+                birthday : "22-5-1999",
+                eat : function () {
+                    console.log("An com");
+                    return this;
+                },
+                sleep : function () {
+                    console.log("Di ngu...");
+                    // return this;
+                }
+            }
+        };
+        console.log(obj.name);
+        console.log(obj.address);
+        obj.run(obj.name);
+        console.log("Ten cua con la: "+obj.children.name);
+        obj.children.eat();
+        obj.children.eat().sleep();
+        obj.goToHotel();
+        obj.name = "Nguyen Van Anh"
+
+        let objClass = {
+            className: "T2004E",
+            classRoom: "P201",
+            classTeacher: [
+                "Teacher A","Teacher B","Teacher C"
+            ],
+            classStudent : [
+                {
+                    classStudentName: "Student 1",
+                    classStudentID: "ID1234"
+                },
+                {
+                    classStudentName: "Student 1",
+                    classStudentID: "ID1234"
+                },
+                {
+                    classStudentName: "Student 1",
+                    classStudentID: "ID1234"
+                },
+                {
+                    classStudentName: "Student 1",
+                    classStudentID: "ID1234"
+                },
+                {
+                    classStudentName: "Student 1",
+                    classStudentID: "ID1234"
+                }
+            ]
+        };
+        console.log(objClass.classStudent.classStudent1.classStudentName);
+    </script>
+</body>
+</html>
