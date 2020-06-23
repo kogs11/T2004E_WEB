@@ -12,7 +12,7 @@
     <h2 id="temp_min_max">Nhiệt độ thấp nhất - cao nhất: </h2>
     <h2 id="sea_level">Mực nước biển: </h2>
 <script type="text/javascript">
-    var currentWeather = {
+    let currentWeather = {
         coord:{
             lon:139.01,
             lat:35.02
@@ -52,7 +52,7 @@
         cod :200
     }
     let h2_city = document.getElementById("city-country");
-    h2_city.innerText = h2_city.innerText+" "+currentWeather.name+"-"+currentWeather.sys.country;
+    h2_city.innerText = h2_city.innerText+" "+currentWeather.name+" - "+currentWeather.sys.country;
     let h2_temperature = document.getElementById("temperature");
     h2_temperature.innerText = h2_temperature.innerText+" "+currentWeather.main.temp;
     let h2_pressure = document.getElementById("pressure");
@@ -60,7 +60,7 @@
     let h2_humidity = document.getElementById("humidity");
     h2_humidity.innerText = h2_humidity.innerText+" "+currentWeather.main.humidity;
     let h2_temp_min_max = document.getElementById("temp_min_max");
-    h2_temp_min_max.innerText = h2_temp_min_max.innerText+" "+currentWeather.main.temp_min+"-"+currentWeather.main.temp_max;
+    h2_temp_min_max.innerText = h2_temp_min_max.innerText+" "+currentWeather.main.temp_min+" - "+currentWeather.main.temp_max;
     let h2_sea_level = document.getElementById("sea_level");
     h2_sea_level.innerText = h2_sea_level.innerText+" "+currentWeather.main.sea_level;
 </script>
