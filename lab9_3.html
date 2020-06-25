@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB 9</title>
+    <link rel="stylesheet" type="text/css" href="css/lab9_3.css">
+</head>
+<body>
+    <h2>Xác định vị trí trong Tabs</h2>
+    <div class="tab-button">
+        <button class="tab-link" onclick="openTabs(event, 'home-content')">Home</button>
+        <button class="tab-link" onclick="openTabs(event, 'profile-content')">Profile</button>
+        <button class="tab-link" onclick="openTabs(event, 'messages-content')">Messages</button>
+        <button class="tab-link" onclick="openTabs(event, 'settings-content')">Settings</button>
+    </div>
+    <div class="tab-content" id="home-content">
+        <p>This is Home content</p>
+    </div>
+    <div class="tab-content" id="profile-content">
+        <p>This is Profile content</p>
+    </div>
+    <div class="tab-content" id="messages-content">
+        <p>This is Messages content</p>
+    </div>
+    <div class="tab-content" id="settings-content">
+        <p>This is Settings content</p>
+    </div>
+    <script type="text/javascript">
+        function openTabs(evt, tabContent){
+            let tablinks, tabcontents;
+            tabcontents = document.getElementsByClassName("tab-content");
+            for(let i=0; i<tabcontents.length;i++){
+                tabcontents[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for(let i=0;i<tablinks.length;i++){
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabContent).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

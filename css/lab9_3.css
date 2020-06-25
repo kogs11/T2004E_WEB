@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    padding: 30px 10px;
+}
+.tab-button{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    padding-left: 10px;
+    z-index: 1;
+}
+.tab-button button{
+    background-color: white;
+    float: left;
+    border: 1px solid white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 3px;
+    font-size: 16px;
+    z-index: 10;
+}
+.tab-button button:hover{
+    background-color: #cccccc;
+}
+.tab-button button.active{
+    border: 1px solid #ccc;
+    background-color: white;
+    border-bottom: none;
+}
+.tab-content{
+    display: none;
+    padding-left: 10px;
+    padding-top: 30px;
+}
