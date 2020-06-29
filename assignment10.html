@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SLIDER + TIMER COUNTDOWN</title>
+    <link rel="stylesheet" type="text/css" href="css/timercountdown.css">
+</head>
+<body>
+<h1>COUNTDOWN ENDS IN:</h1><br/>
+<input id="min_input" type="number" min="0" placeholder="Nhap so phut"/>
+<button type="button" id="clock" onclick="startClock()">Start</button>
+<div class="clock">
+    <div id="hour-hand"></div>
+    <div id="min-hand"></div>
+    <div id="sec-hand"></div>
+</div>
+<script type="text/javascript">
+    function startClock(){
+        var min = 0;
+        var sec = 0;
+        var timeStop = document.getElementById("min_input").value;
+        var x = setInterval(function () {
+            var min_deg = min*360/60;
+            var sec_deg = sec*360/60;
+            document.getElementById("sec-hand").style.transform = "rotate("+sec_deg+"deg)";
+            document.getElementById("sec-hand").style.transformOrigin = "bottom";
+            document.getElementById("min-hand").style.transform = "rotate("+min_deg+"deg)";
+            document.getElementById("min-hand").style.transformOrigin = "bottom";
+            sec++;
+            min = sec/60;
+            if(min > timeStop){
+                clearInterval(x);
+            }
+        },100);
+    }
+</script>
+</body>
+</html>

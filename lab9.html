@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+    <h2>Xác định vị trí trong Tabs</h2>
+    <div class="tabs">
+        <button type="button" id="home" onclick="tabClickHome()">Home</button>
+        <button type="button" id="profile" onclick="tabClickProfile()">Profile</button>
+        <button type="button" id="messages" onclick="tabClickMessages()">Messages</button>
+        <button type="button" id="settings" onclick="tabClickSettings()">Settings</button>
+    </div>
+    <div class="tabs-content">
+        <div id="home-content">This is Home contents</div>
+        <div id="profile-content">This is Profile contents</div>
+        <div id="messages-content">This is Messages contents</div>
+        <div id="settings-content">This is Settings contents</div>
+    </div>
+
+    <script type="text/javascript">
+        function tabClickHome(){
+            document.getElementById("home-content").style.display = "block";
+            document.getElementById("profile-content").style.display = "none";
+            document.getElementById("messages-content").style.display = "none";
+            document.getElementById("settings-content").style.display = "none";
+        }
+        function tabClickProfile(){
+            document.getElementById("home-content").style.display = "none";
+            document.getElementById("profile-content").style.display = "block";
+            document.getElementById("messages-content").style.display = "none";
+            document.getElementById("settings-content").style.display = "none";
+        }
+        function tabClickMessages(){
+            document.getElementById("home-content").style.display = "none";
+            document.getElementById("profile-content").style.display = "none";
+            document.getElementById("messages-content").style.display = "block";
+            document.getElementById("settings-content").style.display = "none";
+        }
+        function tabClickSettings(){
+            document.getElementById("home-content").style.display = "none";
+            document.getElementById("profile-content").style.display = "none";
+            document.getElementById("messages-content").style.display = "none";
+            document.getElementById("settings-content").style.display = "block";
+        }
+    </script>
+</body>
+</html>

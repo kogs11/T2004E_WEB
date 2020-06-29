@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SLIDER + TIMER COUNTDOWN</title>
+    <link rel="stylesheet" type="text/css" href="css/timercountdown.css">
+</head>
+<body>
+    <h1>COUNTDOWN ENDS IN:</h1><br/>
+    <button type="button" onclick="startCountdown()">START</button>
+    <p id="time">10:00</p>
+    <input id="minute" type="text" placeholder="Nhap so phut" pattern=""/>
+    <button type="button" onclick="startCount()">Start</button>
+    <button type="button" id="clock" onclick="startClock()">Start</button>
+    <div class="clock">
+        <div id="hour-hand"></div>
+        <div id="minute-hand"></div>
+    </div>
+    <script type="text/javascript">
+        function startCountdown() {
+            var minute = 9;
+            var sec = 59;
+            var tcd = setInterval(function () {
+                document.getElementById("time").innerHTML = (minute>10?minute:"0"+minute) +":"+ (sec>10?sec:"0"+sec);
+                sec--;
+                if(sec == -1){
+                    minute--;
+                    sec = 59;
+                }
+                if(minute <0){
+                    clearInterval(tcd);
+                    // alert("Time out!")
+                }
+            },100);
+        }
+        function startCount(){
+            var minute = document.getElementById("minute").value - 1;
+            var sec = 59;
+            var x = setInterval(function () {
+                document.getElementById("minute").value = minute +":"+ sec;
+                sec--;
+                if(sec == -1){
+                    minute--;
+                    sec = 59;
+                    if(minute <0){
+                        clearInterval(x);
+                    }
+                }
+            },100);
+        }
+        function startClock(){
+            var min = 10;
+            var min_deg = 360/12*min;
+            console.log(min_deg);
+            document.getElementById("hour-hand").style.transform = "rotate("+min_deg+")deg)";
+            var sec = 0;
+            var x = setInterval(function () {
+                document.getElementById("minute").value = minute +":"+ sec;
+                sec--;
+                if(sec == -1){
+                    minute--;
+                    sec = 59;
+                    if(minute == -1 && sec == 59){
+                        clearInterval(x);
+                    }
+                }
+            },100);
+        }
+    </script>
+</body>
+</html>
