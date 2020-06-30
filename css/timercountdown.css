@@ -55,8 +55,8 @@
     position: relative;
 }
 .slider{
-    width: 80%;
-    height: 80%;
+    width: 800px;
+    height: 400px;
     background-color: white;
     position: absolute;
     top: 50px;
@@ -69,7 +69,7 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 160px;
     left: 0;
 }
 #next{
@@ -80,7 +80,7 @@
     cursor: pointer;
     transform: rotateY(180deg);
     position: absolute;
-    top: 40%;
+    top: 160px;
     right: 0;
 }
 #prev button:active{
@@ -88,9 +88,19 @@
     outline: none;
 }
 .banner{
-    width: 80%;
+    width: 640px;
     height: 100%;
     margin: 0 auto;
-    background-color: #e26f6f;
+    display: block;
     overflow: hidden;
+}
+.banner_img{
+    width: 2560px;
+    float: left;
+}
+.banner_img>div{
+    float: left;
+}
+.banner_img img{
+    max-width: 640px;
 }
