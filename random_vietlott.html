@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Vietlott</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var x = ["02","03","05","08","09","10","12","18","19","54"];
+        let t = 9;
+        for(let i=0;i<6;i++){
+            let j = parseInt(Math.random()*t);
+            console.log(j);
+            t--;
+            let vl = x[j];
+            console.log(vl);
+            x.splice(j,j);
+        }
+    </script>
+</body>
+</html>

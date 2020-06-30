@@ -6,9 +6,23 @@
     <link rel="stylesheet" type="text/css" href="css/timercountdown.css">
 </head>
 <body>
-<h1>COUNTDOWN ENDS IN:</h1><br/>
-<input id="min_input" type="number" min="0" placeholder="Nhap so phut"/>
-<button type="button" id="clock" onclick="startClock()">Start</button>
+<!--    <h1>BANNER</h1>-->
+    <div class="container">
+        <div class="slider">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10094;</button>
+            <div class="banner" id="banner">
+                <img id="banner_1" src="img/banner%201.png"/>
+                <img id="banner_2" src="img/banner%202.jpg"/>
+                <img id="banner_3" src="img/banner%203.jpg"/>
+                <img id="banner_4" src="img/banner%204.jpg"/>
+            </div>
+        </div>
+    </div>
+
+    <h1>COUNTDOWN ENDS IN:</h1><br/>
+    <input id="min_input" type="number" min="0" placeholder="Nhap so phut"/>
+    <button type="button" id="clock" onclick="startClock()">Start</button>
 <div class="clock">
     <div id="hour-hand"></div>
     <div id="min-hand"></div>
