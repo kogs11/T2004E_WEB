@@ -1,0 +1,8 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	color: snow;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 13px;
+}
+img { max-width:100%;}
