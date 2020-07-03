@@ -23,6 +23,7 @@
     top: 30px;
     left: 50%;
     z-index: 3;
+    transform-origin: bottom;
 }
 #min-hand{
     width: 1px;
@@ -33,6 +34,7 @@
     top: 20px;
     left: 50%;
     z-index: 5;
+    transform-origin: bottom;
 }
 #sec-hand{
     width: 1px;
@@ -44,7 +46,7 @@
     left: 50px;
     z-index: 6;
     /*transform: rotate(90deg);*/
-    /*transform-origin: bottom;*/
+    transform-origin: bottom;
 }
 .container{
     width: 1000px;
