@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Nivo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="libs/demonivo/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="libs/demonivo/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="libs/demonivo/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="libs/demonivo/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="libs/demonivo/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="libs/demonivo/demo/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="slider" class="nivoSlider">
+        <img src="img/toystory.jpg" alt="" />
+        <img src="img/up.jpg" alt="" title="This is an example of a caption" />
+        <img src="img/nemo.jpg" alt="" data-transition="slideInLeft" />
+        <img src="img/walle.jpg" alt="" title="#htmlcaption" />
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

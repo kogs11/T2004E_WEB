@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <p class="pp">Doan van so 1</p>
+    <p class="pp">Doan van so 2</p>
+    <p class="pp">Doan van so 3</p>
+    <ul class="list">
+        <li>Mi tom</li>
+        <li>Banh mi</li>
+        <li>Xoi xeo</li>
+        <li>Com ga</li>
+    </ul>
+    <button onmouseover="Open()">Open</button>
+    <button onmouseover="Close()">Close</button>
+    <button onclick="Auto()">Auto</button>
+    <button class="move">Move</button>
+<script type="text/javascript">
+    // let px = $("p.pp");
+    // px.css("color","red");
+    $("p.pp").css("color","red");
+    $("ul li:first-child").css("color","green");
+    $("ul li:first-child").next().next().css("color","orange");
+    $("ul li:first-child").parent().css("background-color","yellow");
+    $("ul li:last-child").css({
+        "color": "blue",
+        "background-color": "gray"
+    });
+    let txt = $("ul li:first-child").text();
+    $("ul li:first-child").text($("ul li:first-child").text()+" trung");
+    $("ul li:first-child").html("<h1>Banh mi trung</h1>");
+    $("ul li:first-child").addClass("active");
+    function Open(){
+        // $("ul").show();
+        // $("ul").fadeIn(10000);
+        $("ul").slideDown();
+    }
+    function Close(){
+        // $("ul").hide();
+        // $("ul").fadeOut(10000);
+        $("ul").slideUp();
+    }
+    function Auto(){
+        // $("ul").toggle();
+        // $("ul").slideToggle();
+        $("ul").fadeToggle();
+    }
+    // function Move(){
+    //     if($("ul").hasClass("active")){
+    //         $("ul").animate({
+    //             "margin":"0px"
+    //         });
+    //         $("ul").removeClass("active");
+    //     }else {
+    //         $("ul").addClass("active");
+    //         $("ul").animate({
+    //             "margin-left": "200px"
+    //         }, 500);
+    //     }
+    // }
+    $(".move").bind("click",function () {
+        if($("ul").hasClass("active")){
+            $("ul").animate({
+                "margin-left":"0px"
+            });
+            $("ul").removeClass("active");
+        }else {
+            $("ul").addClass("active");
+            $("ul").animate({
+                "margin-left": "200px"
+            });
+        }
+    })
+    $("ul").bind("mouseenter", function(){
+        console.log("mouse enter");
+    })
+</script>
+</body>
+</html>
