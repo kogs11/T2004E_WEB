@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    line-height: 24px;
+    display: block;
+}
+.product-item{
+    display: block;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+.product-image{
+    width: 100%;
+}
+.product-image img{
+    max-width: 100%;
+}
+.product-action{
+    display: block;
+    height: 44px;
+    background-color: #f17a00;
+}
+.add-card button{
+    background: url("../img/icon-cart.png") center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
